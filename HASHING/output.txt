@@ -1,0 +1,5 @@
+count of a is 2
+count of r is 3
+count of t is 4
+count of h is 3
+count of s is 2
