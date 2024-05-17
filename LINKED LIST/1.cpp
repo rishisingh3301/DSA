@@ -39,6 +39,7 @@ bool searhinLL(Node* head, int target){
         if(temp->data==target)return true;
         temp=temp->next;
     }
+    return false;
 }
 
 //length of a linkedlist
@@ -54,12 +55,25 @@ int lengthofLL(Node* head){
 
 int main()
 {
+    //basic configuration
+    // int x = 8;
+    // int *y = &x;
+    // cout << "y is : " << y << endl;
+    // cout << "&x is : " << &x << endl;
+    // cout << "*y is : " << *y << endl;
+    // cout << "x is : " << x << endl;
+    // output
+    // y is : 0x61ff08
+    // & x is : 0x61ff08
+    // * y is : 8 
+    // x is : 8
+
     //create a node
-    // int arr[3]={3,6,9};
-    // Node* y = new Node(arr[2]);
-    // cout<<y<<endl;
-    // cout<<y->data<<endl;
-    // cout<<y->next<<endl;
+    int arr[3]={3,6,9};
+    Node* y = new Node(arr[2],nullptr);
+    cout<<y<<endl;
+    cout<<y->data<<endl;
+    cout<<y->next<<endl;
 
     //creating a linked list from array and printing the linked list
     // vector<int> arr={2,4,6,8,10,12};
